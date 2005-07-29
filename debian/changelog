@@ -1,0 +1,543 @@
+hwdata-kanotix (0.162-1) unstable; urgency=low
+
+  * new upstream version:
+    - remove /etc/pcmcia/config, conflict with pcmcia-cs
+    - move blacklist to /etc/modprobe.d, require new module-init-tools
+    - add LG monitors (#162466, #161734)
+    - add orinoco card (#161696)
+    - more mptfusion stuff (#107088)
+    - add Samsung monitor (#161013)
+    - pcitable: make branding happy (#160047)
+    - Cards: add required blank line (#157972)
+    - add some monitors
+    - add JVC CD-ROM (#160907, <richard@rsk.demon.co.uk>)
+    - add hisax stuff to blacklist (#154799, #159068)
+  * switch to dpatch.
+  * modify create-addon.
+  * revert to arch := all, as AVM is distributing x86_64 compatible drivers
+    now.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 22 Jul 2005 01:51:34 +0200
+
+hwdata-kanotix (0.158-4) unstable; urgency=low
+
+  * fix automatically created entries. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Jun 2005 01:41:26 +0200
+
+hwdata-kanotix (0.158-3) unstable; urgency=low
+
+  * add 0x10de  0x00f1  "Card:NVIDIA GeForce 6600 GT".
+ 
+ -- Joerg Schirottke <master@kanotix.com>  Mon, 20 Jun 2005 23:08:53 +0200
+
+hwdata-kanotix (0.158-2) unstable; urgency=low
+
+  * add 0x10de  0x01b0  "snd-intel8x0".
+
+ -- Joerg Schirottke <master@kanotix.com>  Thu,  9 Jun 2005 00:33:00 +0200
+
+hwdata-kanotix (0.158-1) unstable; urgency=low
+
+  * new upstream version:
+    - add a orinoco card (#157482)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 28 May 2005 13:23:35 +0200
+
+hwdata-kanotix (0.157-1) unstable; urgency=low
+
+  * new upstream version:
+    - add 20" Apple Cinema Display
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  7 May 2005 12:15:03 +0200
+
+hwdata-kanotix (0.156-1) unstable; urgency=low
+
+  * new upstream version:
+    - Update SiS entries in Cards/pcitable to match what Xorg X11 6.8.2
+    supports
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Apr 2005 19:33:19 +0200
+
+hwdata-kanotix (0.155-8) unstable; urgency=low
+
+  * use r8180|sk98lin|snd-|tg3 creation on the fly
+
+ -- Joerg Schirottke <master@kanotix.com>  Sun, 17 Apr 2005 22:15:04 +0200
+
+hwdata-kanotix (0.155-7) unstable; urgency=low
+
+  * add 0x1260  0x3890  "ndiswrapper". 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 13 Apr 2005 23:44:44 +0200
+
+hwdata-kanotix (0.155-6) unstable; urgency=low
+
+  * add 0x11ab	0x4362	"sk98lin". 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 12 Apr 2005 02:21:05 +0200
+
+hwdata-kanotix (0.155-5) unstable; urgency=low
+
+  * add 0x10de  0x006b  "snd-intel8x0" 
+
+ -- Joerg Schirottke <master@kanotix.com>  Sun, 10 Apr 2005 11:07:24 +0200
+
+hwdata-kanotix (0.155-4) unstable; urgency=low
+
+  * add 0x1039	0x6330	"Card:SiS 6326".
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  9 Apr 2005 17:42:11 +0200
+
+hwdata-kanotix (0.155-3) unstable; urgency=low
+
+  * add 0x10de  0x006a  "snd-intel8x0". 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  9 Apr 2005 00:20:30 +0200
+
+hwdata-kanotix (0.155-2) unstable; urgency=low
+
+  * add custom: 0x1260  0x3890  0x1385  0x4800  "ndiswrapper" 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Apr 2005 00:05:34 +0200
+
+hwdata-kanotix (0.155-1) unstable; urgency=low
+
+  * new upstream version:
+    - Add a boatload of BenQ, Acer, Sony, NEC, Mitsubishi, and Dell monitors
+    - Add Typhoon Speednet Wireless PCMCIA Card mapping to atmel_cs driver
+    - update the framebuffer blacklist
+  * make the package arch dependend, to deal with missing avm drivers for
+    x86_64.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  1 Apr 2005 21:37:17 +0200
+
+hwdata-kanotix (0.152-1) unstable; urgency=low
+
+  * new upstream version:
+    - fix qlogic driver mappings, add upgradelist mappings for the modules
+      that changed names (#150621)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 19 Mar 2005 22:07:32 +0100
+
+hwdata-kanotix (0.151-1) unstable; urgency=low
+
+  * new upstream version:
+    - Added one hundred billion new nvidia PCI IDs to pcitable and Cards to
+      synchronize it with X.Org X11 6.8.2.  (#140601)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  4 Mar 2005 01:46:43 +0100
+
+hwdata-kanotix (0.150-2) unstable; urgency=low
+
+  * add Realtek RTL8180L definitions.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 16 Jan 2005 20:05:07 +0100
+
+hwdata-kanotix (0.150-1) unstable; urgency=low
+
+  * new upstream version:
+    - Add Dell UltraSharp 1704FPV (Analog & Digital)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Jan 2005 17:17:39 +0100
+
+hwdata-kanotix (0.148-6) unstable; urgency=low
+
+  * fix Dell Soundblaster 5.1 (0x1102 0x0006 "snd-emu10k1x").
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 11 Jan 2005 00:02:23 +0100
+
+hwdata-kanotix (0.148-5) unstable; urgency=low
+
+  * fix Dell Soundblaster 5.1 (0x1102 0x0008 "snd-emu10k1").
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Jan 2005 13:55:58 +0100
+
+hwdata-kanotix (0.148-4) unstable; urgency=low
+
+  * add Broadcom Corporation NetXtreme BCM5788 Gigabit Ethernet 
+    (0x14e4 0x169c  "tg3"). 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 27 Dec 2004 17:16:03 +0100
+
+hwdata-kanotix (0.148-3) unstable; urgency=low
+
+  * blacklist 0x1244 0x0[a,e]00 explicitly.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  6 Dec 2004 21:12:39 +0100
+
+hwdata-kanotix (0.148-2) unstable; urgency=low
+
+  * update custom entries. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 26 Nov 2004 15:18:21 +0100
+
+hwdata-kanotix (0.148-1) unstable; urgency=low
+
+  * new upstream version:
+    - add Amptron monitors (#139142)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Nov 2004 23:51:47 +0100
+
+hwdata-kanotix (0.147-2) unstable; urgency=low
+
+  * removed RTL8180L, due to missing drivers.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 22 Nov 2004 12:16:31 +0100
+
+hwdata-kanotix (0.147-1) unstable; urgency=low
+
+  * new upstream release:
+    - update usb.ids (#138533)
+    - migrate dpt_i2o to i2o_block (#138603)
+    - update pci.ids (#138233)
+    - add Apple monitors (#138481)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 11 Nov 2004 22:03:54 +0100
+
+hwdata-kanotix (0.145-2) unstable; urgency=low
+
+  * add 0x10ec 0x8180, ndiswrapper. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 24 Oct 2004 18:24:38 +0200
+
+hwdata-kanotix (0.145-1) unstable; urgency=low
+
+  * new upstream release:
+    - remove ahci mappings, don't prefer it over ata_piix
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 23 Oct 2004 12:12:48 +0200
+
+hwdata-kanotix (0.144-1) unstable; urgency=low
+
+  * merge new upstream release:
+    - update IDs for Cirrus, Trident, C&T, and S3
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Oct 2004 09:09:02 +0200
+
+hwdata-kanotix (0.143-1) unstable; urgency=low
+
+  * merge new upstream release:
+    - add ahci mappings to prefer it over ata_piix
+    - map davej's ancient matrox card to vesa (#122750)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 14 Oct 2004 22:27:38 +0200
+
+hwdata-kanotix (0.141-1) unstable; urgency=low
+
+  * merge new upstream release:
+    - Add Belkin F5D6020 ver.2 (802.11b card based on Atmel chipset)
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  9 Oct 2004 17:44:16 +0200
+
+hwdata-kanotix (0.140-3) unstable; urgency=low
+
+  * add custom ID: 0x1260 0x3890 0x1113 0xee03, ndiswrapper 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  7 Oct 2004 21:55:36 +0200
+
+hwdata-kanotix (0.140-2) unstable; urgency=low
+
+  * merge new upstream release:
+    - include /etc/hotplug/blacklist here
+    - add S3 UniChrome (#131403)
+    - update pci.ids
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  3 Oct 2004 17:07:07 +0200
+
+hwdata-kanotix (0.135-2) unstable; urgency=low
+
+  * fork from hwdata-knoppix.
+  * merge new upstream release.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 28 Sep 2004 00:35:47 +0200
+
+hwdata-knoppix (0.134-2) unstable; urgency=low
+
+  * merge new upstream release.
+  * add custom ID: 0x8086:0x24d5, snd-intel8x0.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Sep 2004 21:23:16 +0200
+
+hwdata-knoppix (0.131-4) unstable; urgency=low
+
+  * remove btaudio from the detection. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 18 Sep 2004 12:22:42 +0200
+
+hwdata-knoppix (0.131-3) unstable; urgency=low
+
+  * fix critical deadlock.
+  * remove PCI IDs for Fritz!PCI, necessary for using external capi drivers.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 17 Sep 2004 23:08:31 +0000
+
+hwdata-knoppix (0.131-2) unstable; urgency=low
+
+  * merge new upstream release. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 17 Sep 2004 19:27:59 +0000
+
+hwdata-knoppix (0.107-8) unstable; urgency=low
+
+  * Changed Fritz!PCI V2 from hisax to hisax_fcpcipnp
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 18 Aug 2004 23:54:27 +0200
+
+hwdata-knoppix (0.107-7) unstable; urgency=low
+
+  * Added 11ab:4320 gigabit sk98lin
+
+ -- knopper.net <knopper@linuxtag.net>  Fri, 13 Aug 2004 18:23:12 +0200
+
+hwdata-knoppix (0.107-6) unstable; urgency=low
+
+  * Added Radeon Mobility 9600 M10 (RV350)
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 28 Jul 2004 01:06:16 +0200
+
+hwdata-knoppix (0.107-5) unstable; urgency=low
+
+  * Added VIA Technologies, Inc. VT8623 [Apollo CLE266] integrated CastleRock
+    graphics (rev 03) as suggested by Chris Liechti
+
+ -- knopper.net <knopper@linuxtag.net>  Sun,  6 Jun 2004 05:29:55 +0200
+
+hwdata-knoppix (0.107-4) unstable; urgency=low
+
+  * Trying to resort e100 vs eepro100 cards
+
+ -- knopper.net <knopper@linuxtag.net>  Sun,  9 May 2004 21:55:27 +0200
+
+hwdata-knoppix (0.107-3) unstable; urgency=low
+
+  * Changed eepro100 to e100 on suggestion of baldyeti
+
+ -- knopper.net <knopper@linuxtag.net>  Sun,  9 May 2004 04:34:58 +0200
+
+hwdata-knoppix (0.107-2) unstable; urgency=low
+
+  * Added another nVidia PCI ID
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 28 Apr 2004 00:43:47 +0200
+
+hwdata-knoppix (0.107-1) unstable; urgency=low
+
+  * Update to new upstream version
+  * Added some ipw2100 based PCI ids
+
+ -- knopper.net <knopper@linuxtag.net>  Sun, 18 Apr 2004 17:23:31 +0200
+
+hwdata-knoppix (0.101-3) unstable; urgency=low
+
+  * Added entry for NVidia ethernet controllers
+
+ -- knopper.net <knopper@linuxtag.net>  Sat, 14 Feb 2004 00:07:20 +0100
+
+hwdata-knoppix (0.101-2) unstable; urgency=low
+
+  * Changed tulip card 1011:0009 to de4x5
+
+ -- knopper.net <knopper@linuxtag.net>  Mon, 12 Jan 2004 00:03:50 +0100
+
+hwdata-knoppix (0.101-1) unstable; urgency=low
+
+  * Update to new upstream version
+
+ -- Knoppix User <knopper@linuxtag.net>  Wed, 10 Dec 2003 23:50:30 +0100
+
+hwdata-knoppix (0.95-1) unstable; urgency=low
+
+  * Update to new upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Sun, 14 Sep 2003 00:41:21 +0200
+
+hwdata-knoppix (0.85-3) unstable; urgency=low
+
+  * Added more radeon cards
+
+ -- knopper.net <knopper@linuxtag.net>  Fri,  5 Sep 2003 19:45:12 +0200
+
+hwdata-knoppix (0.85-2) unstable; urgency=low
+
+  * Added another emu10k/audigy soundcard
+
+ -- knopper.net <knopper@linuxtag.net>  Fri, 25 Jul 2003 16:27:26 +0200
+
+hwdata-knoppix (0.85-1) unstable; urgency=low
+
+  * Updated to new upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Thu, 19 Jun 2003 04:45:21 +0200
+
+hwdata-knoppix (0.75-8) unstable; urgency=low
+
+  * Added entry for bcm4400
+
+ -- knopper.net <knopper@linuxtag.net>  Fri, 13 Jun 2003 03:17:46 +0200
+
+hwdata-knoppix (0.75-7) unstable; urgency=low
+
+  * Added another radeon
+
+ -- knopper.net <knopper@linuxtag.net>  Mon,  2 Jun 2003 21:07:51 +0200
+
+hwdata-knoppix (0.75-6) unstable; urgency=low
+
+  * Added one more ATI radoen card, dualhead PCI ID
+
+ -- knopper.net <knopper@linuxtag.net>  Tue, 20 May 2003 23:25:01 +0200
+
+hwdata-knoppix (0.75-5) unstable; urgency=low
+
+  * Added another nVidia card
+
+ -- knopper.net <knopper@linuxtag.net>  Tue, 13 May 2003 20:50:53 +0200
+
+hwdata-knoppix (0.75-4) unstable; urgency=low
+
+  * changed AM53Cx -> tmscsim SCSI Adapter
+
+ -- knopper.net <knopper@linuxtag.net>  Mon, 28 Apr 2003 02:03:12 +0200
+
+hwdata-knoppix (0.75-3) unstable; urgency=low
+
+  * Added exotic Aldi-PC card
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 23 Apr 2003 18:58:59 +0200
+
+hwdata-knoppix (0.75-2) unstable; urgency=low
+
+  * Updates to some SIS graphics cards that are now supported by XFree4.3.
+
+ -- knopper.net <knopper@linuxtag.net>  Sun, 30 Mar 2003 16:32:55 +0200
+
+hwdata-knoppix (0.75-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Sun, 23 Mar 2003 19:03:52 +0100
+
+hwdata-knoppix (0.64-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 29 Jan 2003 21:16:59 +0100
+
+hwdata-knoppix (0.61-5) unstable; urgency=low
+
+  * Added trident cyberblade 8620
+
+ -- knopper.net <knopper@linuxtag.net>  Wed,  1 Jan 2003 21:50:18 +0100
+
+hwdata-knoppix (0.61-4) unstable; urgency=low
+
+  * Removed erraneous snd-card* entries
+  * Fixed emu10k1-gp
+
+ -- knopper.net <knopper@linuxtag.net>  Thu, 12 Dec 2002 16:15:47 +0100
+
+hwdata-knoppix (0.61-3) unstable; urgency=low
+
+  * Replaced tulip-de4x5
+
+ -- knopper.net <knopper@linuxtag.net>  Fri,  6 Dec 2002 18:39:07 +0100
+
+hwdata-knoppix (0.61-2) unstable; urgency=low
+
+  * Added some cpqarray PCI IDs
+
+ -- knopper.net <knopper@linuxtag.net>  Thu,  5 Dec 2002 00:58:20 +0100
+
+hwdata-knoppix (0.61-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Tue,  3 Dec 2002 22:10:46 +0100
+
+hwdata-knoppix (0.44-3) unstable; urgency=low
+
+  * Use nv for GeForce 4 cards
+
+ -- knopper.net <knopper@linuxtag.net>  Fri, 25 Oct 2002 22:55:10 +0200
+
+hwdata-knoppix (0.44-2) unstable; urgency=low
+
+  * Added 2 wireless orinoco_pci pci cards
+
+ -- knopper.net <knopper@linuxtag.net>  Sun,  6 Oct 2002 15:23:43 +0200
+
+hwdata-knoppix (0.44-1) unstable; urgency=low
+
+  * Update to the newest upstream version
+
+ -- knopper.net <knopper@linuxtag.net>  Mon, 16 Sep 2002 18:58:32 +0200
+
+hwdata-knoppix (0.36-4) unstable; urgency=low
+
+  * 1282:9102 works only with dmfe
+
+ -- knopper.net <knopper@linuxtag.net>  Thu,  5 Sep 2002 19:16:40 +0200
+
+hwdata-knoppix (0.36-3) unstable; urgency=low
+
+  * Added 5333:8a26 to XFree86(savage) supported cards
+
+ -- knopper.net <knopper@linuxtag.net>  Fri, 23 Aug 2002 15:36:18 +0200
+
+hwdata-knoppix (0.36-2) unstable; urgency=low
+
+  * Added another AC97 card
+
+ -- knopper.net <knopper@linuxtag.net>  Sat, 17 Aug 2002 18:25:16 +0200
+
+hwdata-knoppix (0.36-1) unstable; urgency=low
+
+  * Update to 0.36
+
+ -- knopper.net <knopper@linuxtag.net>  Mon,  5 Aug 2002 21:20:00 +0200
+
+hwdata-knoppix (0.30-2) unstable; urgency=low
+
+  * Knoppix extensions in pcitable-knoppix
+
+ -- knopper.net <knopper@linuxtag.net>  Wed, 26 Jun 2002 17:33:26 +0200
+
+hwdata (0.30-1) unstable; urgency=low
+
+  * new upstream from 2002-05-29
+
+ -- Noel Koethe <noel@debian.org>  Thu, 30 May 2002 16:43:00 +0200
+
+hwdata (0.14-1) unstable; urgency=low
+
+  * new upstream from 2002-04-17
+
+ -- Noel Koethe <noel@debian.org>  Sun, 12 May 2002 14:41:00 +0200
+
+hwdata (0.12-1) unstable; urgency=medium
+
+  * new upstream from 2002-04-10
+    (will wait with upload until 0.10-1 will enter woody)
+
+ -- Noel Koethe <noel@debian.org>  Mon, 15 Apr 2002 21:00:00 +0200
+
+hwdata (0.10-1) unstable; urgency=low
+
+  * new upstream from 2002-04-03
+
+ -- Noel Koethe <noel@debian.org>  Sun,  7 Apr 2002 15:03:00 +0200
+
+hwdata (0.8.2-1) unstable; urgency=low
+
+  * new upstream from 2002-03-18
+
+ -- Noel Koethe <noel@debian.org>  Sat, 30 Mar 2002 15:25:00 +0100
+
+hwdata (0.3-1) unstable; urgency=low
+
+  * Initial Release.
+    upstream splitted the kudzu package into kudzu and
+    hwdata
+
+ -- Noel Koethe <noel@debian.org>  Wed,  6 Mar 2002 13:10:18 +0100

@@ -1,0 +1,29 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## xbase-clients.diff by Stefan Lippers-Hollmann <s.l-h@gmx.de>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description
+
+@DPATCH@
+--- hwdata-kanotix-0.158.orig/hwdata.spec
++++ hwdata-kanotix-0.158/hwdata.spec
+@@ -31,6 +31,8 @@
+ %dir /etc/pcmcia
+ %config(noreplace) /etc/hotplug/blacklist
+ %config /etc/pcmcia/config
++%config(noreplace) /etc/updfstab.conf
++%config /etc/updfstab.conf.default
+ %config /usr/share/hwdata/*
+ # This file is screaming to be moved into /usr/share/hwdata sometime <g>
+ /usr/X11R6/lib/X11/Cards
+--- hwdata-kanotix-0.158.orig/Makefile
++++ hwdata-kanotix-0.158/Makefile
+@@ -31,6 +31,8 @@
+ 	ln -s ../../../share/$(NAME)/Cards $(prefix)/X11R6/lib/X11/Cards
+ 	mkdir -p -m 755 $(sysconfdir)/pcmcia
+ 	install -m 644 config $(sysconfdir)/pcmcia
++	install -m 644 updfstab.conf $(sysconfdir)/updfstab.conf
++	install -m 644 updfstab.conf.default $(sysconfdir)/updfstab.conf.default
+ 	mkdir -p -m 755 $(sysconfdir)/hotplug/
+ 	install -m 644 blacklist $(sysconfdir)/hotplug/
+ 

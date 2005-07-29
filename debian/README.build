@@ -1,0 +1,4 @@
+remove usr/X11R6/lib/X11/Cards link from Makefile because
+the file is the xbase-clients package
+
+CHANGELOG file from .spec

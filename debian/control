@@ -1,0 +1,18 @@
+Source: hwdata-kanotix
+Section: misc
+Priority: optional
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.6.2
+
+Package: hwdata-kanotix
+Replaces: hwdata
+Provides: hwdata, hwdata-knoppix
+Architecture: all
+Depends: ${shlibs:Depends}
+Replaces: hwdata, hwdata-knoppix
+Conflicts: hwdata, hwdata-knoppix
+Description: hardware identification / configuration data
+ This package contains various hardware identification and configuration data,
+ such as the pci.ids database, or the XFree86 Cards database.
+ Its needed for the kudzu hardware detection.

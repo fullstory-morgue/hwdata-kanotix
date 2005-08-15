@@ -1,6 +1,5 @@
-hwdata-kanotix (0.164-1) UNRELEASED; urgency=low
+hwdata-kanotix (0.164-1) unstable; urgency=low
 
-  * (NOT RELEASED YET) New upstream release
   * new upstream version:
     - migrate sk98lin -> skge
     - migrate mpt module names (#161420)
@@ -8,7 +7,7 @@ hwdata-kanotix (0.164-1) UNRELEASED; urgency=low
     - switch lone remaining 'Server' entry - that can't work right
     - add Daytek monitor (#164339)
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Aug 2005 14:14:14 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Aug 2005 14:17:19 +0200
 
 hwdata-kanotix (0.162-1) unstable; urgency=low
 

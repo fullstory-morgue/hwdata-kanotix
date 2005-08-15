@@ -1,6 +1,6 @@
 Name: hwdata
 Summary: Hardware identification and configuration data
-Version: 0.162
+Version: 0.164
 Release: 1
 License: GPL/MIT
 Group: System Environment/Base
@@ -35,6 +35,17 @@ rm -rf $RPM_BUILD_ROOT
 /usr/X11R6/lib/X11/Cards
 
 %changelog
+* Tue Aug  9 2005 Jeremy Katz <katzj@redhat.com> - 0.164-1
+- migrate sk98lin -> skge
+
+* Sat Jul 30 2005 Bill Nottingham <notting@redhat.com>
+- migrate mpt module names (#161420)
+- remove pcitable entries for drivers in modules.pcimap
+- switch lone remaining 'Server' entry - that can't work right
+
+* Tue Jul 26 2005 Bill Nottingham <notting@redhat.com>
+- add Daytek monitor (#164339)
+
 * Wed Jul 13 2005 Bill Nottingham <notting@redhat.com> - 0.162-1
 - remove /etc/pcmcia/config, conflict with pcmcia-cs
 

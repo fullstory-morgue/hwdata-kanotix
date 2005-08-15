@@ -1,3 +1,10 @@
+hwdata-kanotix (0.164-2) unstable; urgency=low
+
+  * fix lintian errors.
+  * comply with compat version 4.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Aug 2005 14:21:34 +0200
+
 hwdata-kanotix (0.164-1) unstable; urgency=low
 
   * new upstream version:

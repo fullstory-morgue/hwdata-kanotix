@@ -7,7 +7,7 @@
 #	so if you have anything to contribute, please visit the home page or
 #	send a diff -u against the most recent pci.ids to pci-ids@ucw.cz.
 #
-#	Daily snapshot on Wed 2005-05-04 07:00:12
+#	Daily snapshot on Fri 2005-05-27 07:00:10
 #
 
 # Vendors, devices and subsystems. Please keep sorted.
@@ -8723,6 +8723,11 @@
 	0340  41210 [Lanai] Serial to Parallel PCI Bridge
 # B-segment bridge
 	0341  41210 [Lanai] Serial to Parallel PCI Bridge
+	0370  80333 Segment-A PCI Express-to-PCI Express Bridge
+	0371  80333 A-Bus IOAPIC
+	0372  80333 Segment-B PCI Express-to-PCI Express Bridge
+	0373  80333 B-Bus IOAPIC
+	0374  80333 Address Translation Unit
 	0482  82375EB/SB PCI to EISA Bridge
 	0483  82424TX/ZX [Saturn] CPU to PCI bridge
 	0484  82378ZB/IB, 82379AB (SIO, SIO.A) PCI to ISA Bridge
@@ -8850,6 +8855,7 @@
 		8086 1019  PRO/1000 CT Desktop Connection
 		8086 301f  D865PERL mainboard
 		8086 3427  S875WP1-E mainboard
+	101a  82547EI Gigabit Ethernet Controller (LOM)
 	101d  82546EB Gigabit Ethernet Controller
 		8086 1000  PRO/1000 MT Quad Port Server Adapter
 	101e  82540EP Gigabit Ethernet Controller (Mobile)
@@ -8907,6 +8913,8 @@
 		8086 302f  Desktop Board D865GBF
 		8086 3427  S875WP1-E mainboard
 	1051  82801EB/ER (ICH5/ICH5R) integrated LAN Controller
+	1052  PRO/100 VM Network Connection
+	1053  PRO/100 VM Network Connection
 	1059  82551QM Ethernet Controller
 # ICH-6 Component
 	1064  82562ET/EZ/GT/GZ - PRO/100 VE (LOM) Ethernet Controller
@@ -8956,6 +8964,7 @@
 	107b  82546GB Gigabit Ethernet Controller
 		8086 007b  PRO/1000 MB Dual Port Server Connection
 		8086 107b  PRO/1000 MB Dual Port Server Connection
+	107c  82541PI Gigabit Ethernet Controller
 	1081  Enterprise Southbridge LAN Copper
 	1082  Enterprise Southbridge LAN fiber
 	1083  Enterprise Southbridge LAN SERDES
@@ -8964,9 +8973,14 @@
 	1086  Enterprise Southbridge IPMI/KCS0
 	1087  Enterprise Southbridge UHCI Redirection
 	1089  Enterprise Southbridge BT
+	108a  82546EB Gigabit Ethernet Controller
+	108b  82573V Gigabit Ethernet Controller
+	108c  82573E Gigabit Ethernet Controller
 	1096  Enterprise Southbridge DPT LAN Copper
 	1097  Enterprise Southbridge DPT LAN fiber
 	1098  Enterprise Southbridge DPT LAN SERDES
+	1099  82546GB Gigabit Ethernet Controller
+	109a  82573L Gigabit Ethernet Controller
 	1107  PRO/1000 MF Server Adapter (LX)
 	1130  82815 815 Chipset Host Bridge and Memory Controller Hub
 		1025 1016  Travelmate 612 TX
@@ -9641,7 +9655,7 @@
 	25f8  Server PCI Express x8 Port 4-5
 	25f9  Server PCI Express x8 Port 6-7
 	25fa  Server PCI Express x16 Port 4-7
-	2600  E8500 Hub Interface
+	2600  E8500 Hub Interface 1.5
 	2601  E8500 PCI Express x4 Port D
 	2602  E8500 PCI Express x4 Port C0
 	2603  E8500 PCI Express x4 Port C1
@@ -9653,7 +9667,7 @@
 	2609  E8500 PCI Express x8 Port B
 	260a  E8500 PCI Express x8 Port A
 	260c  E8500 IMI Registers
-	2610  E8500 System Bus, Boot, and Interrupt Registers
+	2610  E8500 Front Side Bus, Boot, and Interrupt Registers
 	2611  E8500 Address Mapping Registers
 	2612  E8500 RAS Registers
 	2613  E8500 Reserved Registers
@@ -9724,12 +9738,12 @@
 	269a  Enterprise Southbridge High Definition Audio
 	269b  Enterprise Southbridge SMBus
 	269e  Enterprise Southbridge PATA
-	2770  Memory Controller Hub
-	2771  PCI Express Graphics Port
-	2772  Integrated Graphics Controller
+	2770  945G/P Memory Controller Hub
+	2771  945G/P PCI Express Graphics Port
+	2772  945G Integrated Graphics Controller
 	2774  955X Memory Controller Hub
 	2775  955X PCI Express Graphics Port
-	2776  Integrated Graphics Controller
+	2776  945G Integrated Graphics Controller
 	2778  Server Memory Controller Hub
 	2779  PCI Express Root Port
 	2782  82915G Express Chipset Family Graphics Controller
@@ -9738,15 +9752,15 @@
 	27a1  Mobile PCI Express Graphics Port
 	27a2  Mobile Integrated Graphics Controller
 	27a6  Mobile Integrated Graphics Controller
-	27b0  I/O Controller Hub LPC
+	27b0  82801GH (ICH7DH) LPC Interface Bridge
 	27b8  82801GB/GR (ICH7 Family) LPC Interface Bridge
-	27b9  Mobile I/O Controller Hub LPC
-	27bd  Mobile I/O Controller Hub LPC
+	27b9  82801GBM (ICH7-M) LPC Interface Bridge
+	27bd  82801GHM (ICH7-M DH) LPC Interface Bridge
 	27c0  82801GB/GR/GH (ICH7 Family) Serial ATA Storage Controllers cc=IDE
 	27c1  82801GR/GH (ICH7 Family) Serial ATA Storage Controllers cc=AHCI
 	27c3  82801GR/GH (ICH7 Family) Serial ATA Storage Controllers cc=RAID
-	27c4  Mobile I/O Controller Hub SATA cc=IDE
-	27c5  Mobile I/O Controller Hub SATA cc=AHCI
+	27c4  82801GBM/GHM (ICH7 Family) Serial ATA Storage Controllers cc=IDE
+	27c5  82801GBM/GHM (ICH7 Family) Serial ATA Storage Controllers cc=AHCI
 	27c8  82801G (ICH7 Family) USB UHCI #1
 	27c9  82801G (ICH7 Family) USB UHCI #2
 	27ca  82801G (ICH7 Family) USB UHCI #3
@@ -9928,7 +9942,6 @@
 		4c53 1050  CT7 mainboard
 		4c53 1051  CE7 mainboard
 		e4bf 1000  CC8-1-BLUES
-	ffff  450NX/GX [Orion] - 82453KX/GX Memory controller [BUG]
 8401  TRENDware International Inc.
 8800  Trigem Computer Inc.
 	2008  Video assistent component

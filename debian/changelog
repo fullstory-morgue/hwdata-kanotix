@@ -1,3 +1,9 @@
+hwdata-kanotix (0.164-3) unstable; urgency=low
+
+  * add e100 ids.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Sep 2005 01:18:33 +0200
+
 hwdata-kanotix (0.164-2) unstable; urgency=low
 
   * fix lintian errors.

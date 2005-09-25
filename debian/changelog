@@ -1,3 +1,9 @@
+hwdata-kanotix (0.164-5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 Sep 2005 00:20:50 +0200
+
 hwdata-kanotix (0.164-4) unstable; urgency=low
 
   * remove e100 hack.

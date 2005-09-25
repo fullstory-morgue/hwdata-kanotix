@@ -10,7 +10,6 @@
 # snd-intel8x0 extra
 0x10de	0x006b	"snd-intel8x0"
 0x10de	0x01b0	"snd-intel8x0"
-0x8086	0x1229	"e100"
 # custom Kanotix blacklist
 0x1244	0x0a00	"kanotix"
 0x1244	0x0e00	"kanotix"

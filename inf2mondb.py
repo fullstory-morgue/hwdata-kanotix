@@ -73,6 +73,9 @@ monitor1Re = re.compile(r'%*.%.*=.*,.*Monitor\\')
 # %3020%     =PB3020,	MonID_PB3020
 monitor2Re = re.compile(r'%*.%.*=.*,.*MonID_')
 
+# sync values that might be in the strings section
+sync_keys = {}
+
 for line in lines:
     tmp = string.strip(line)
     if tmp and tmp[0] == ';':
@@ -136,6 +139,14 @@ for line in lines:
         else:
             value = tmp[0]
         strings[key] = string.strip(value)
+
+        # Deal with sync lines in the strings section
+        if sync_keys.has_key(key):
+            sync = string.split(value, ",")
+            for (man, mon) in sync_keys[key]:
+                monitors[man][mon].hsync = string.strip(sync[0])
+                monitors[man][mon].vsync = string.strip(sync[1])
+            
     # these are the sections that tell us which AddReg to use
     # AddReg=PBCOM14L.AddReg, 1024, DPMS
     elif instsections.has_key(section):
@@ -152,18 +163,31 @@ for line in lines:
     # these are the actual AddReg entries.  Look up in our table
     # to find which
     elif regsections.has_key(section):
-        if string.find(line, 'HKR,"MODES') >= 0:
+        if string.find(line, 'HKR') >= 0:
             ids = regsections[section]
             # make a list of all the monitors pointing to
             # this registry section via install sections
             mons = []
             for id in ids:
                 mons = mons + instsections[id]
-            modes = string.split(line, '"')
-            sync = string.split(modes[3], ',')
-            for (man, mon) in mons:
-                monitors[man][mon].hsync = string.strip(sync[0])
-                monitors[man][mon].vsync = string.strip(sync[1])
+
+            if string.find(line, 'HKR,"MODES') >= 0:
+                modes = string.split(line, '"')
+                sync = string.split(modes[3], ',')
+                for (man, mon) in mons:
+                    monitors[man][mon].hsync = string.strip(sync[0])
+                    monitors[man][mon].vsync = string.strip(sync[1])
+            else:
+                # Sync lines must be somewhere else, maybe in the strings section
+                keyval = None
+                try:
+                    keyval = string.split(line,",")[4]
+                except IndexError:
+                    pass
+                if keyval and string.find(keyval, "KeyValue") >= 0:
+                    keyval = string.replace(string.strip(keyval), "%", "").lower()
+                    sync_keys[keyval] = mons
+
 
 for man in manufacturers.keys():
     for monitor in monitors[man].values():

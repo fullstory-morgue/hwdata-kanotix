@@ -18,7 +18,7 @@ CVSROOT = $(shell cat CVS/Root 2>/dev/null || :)
 
 CVSTAG = $(NAME)-r$(subst .,-,$(VERSION))
 
-FILES = CardMonitorCombos Cards MonitorsDB pci.ids pcitable upgradelist usb.ids
+FILES = MonitorsDB pci.ids upgradelist usb.ids videoaliases videodrivers
 
 all: 
 
@@ -27,8 +27,6 @@ install:
 	for foo in $(FILES) ; do \
 		install -m 644 $$foo $(datadir)/$(NAME) ;\
 	done
-	mkdir -p -m 755 $(prefix)/X11R6/lib/X11
-	ln -s ../../../share/$(NAME)/Cards $(prefix)/X11R6/lib/X11/Cards
 	mkdir -p -m 755 $(sysconfdir)/modprobe.d
 	install -m 644 blacklist $(sysconfdir)/modprobe.d
 
@@ -38,13 +36,8 @@ tag:
 force-tag:
 	@cvs -Q tag -F $(CVSTAG)
 
-pcilint: pcilint.c
-	$(CC) $(CFLAGS) -o pcilint pcilint.c
-
-check: pcilint
+check:
 	[ -x /sbin/lspci ] && /sbin/lspci -i pci.ids > /dev/null
-	./pcilint
-	./check-cards
 	./check-pci-ids.py
 
 create-archive:
@@ -72,5 +65,4 @@ srpm-x:
 
 clean:
 	@rm -f $(NAME)-*.gz
-	@rm -f pcilint
 

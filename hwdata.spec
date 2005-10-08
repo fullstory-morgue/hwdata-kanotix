@@ -1,18 +1,18 @@
 Name: hwdata
 Summary: Hardware identification and configuration data
-Version: 0.164
+Version: 0.169
 Release: 1
 License: GPL/MIT
 Group: System Environment/Base
 Source: hwdata-%{version}.tar.gz
 BuildArch: noarch
-Conflicts: Xconfigurator < 4.9.42-1, pcmcia-cs, kudzu < 1.1.86
+Conflicts: Xconfigurator, system-config-display < 1.0.31, pcmcia-cs, kudzu < 1.2.0
 Requires: module-init-tools >= 3.2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 hwdata contains various hardware identification and configuration data,
-such as the pci.ids database, the X.org Cards and MonitorsDb databases.
+such as the pci.ids database and MonitorsDb databases.
 
 %prep
 
@@ -31,10 +31,24 @@ rm -rf $RPM_BUILD_ROOT
 %dir /usr/share/hwdata
 %config(noreplace) /etc/modprobe.d/blacklist
 %config /usr/share/hwdata/*
-# This file is screaming to be moved into /usr/share/hwdata sometime <g>
-/usr/X11R6/lib/X11/Cards
 
 %changelog
+* Thu Sep  8 2005 Bill Nottingham <notting@redhat.com> - 0.169-1
+- remove Cards, pcitable. Add videodrivers
+
+* Fri Sep  2 2005 Dan Williams <dcbw@redhat.com> - 0.168-1
+- Add more Gateway monitors
+
+* Fri Sep  2 2005 Dan Williams <dcbw@redhat.com> - 0.167-1
+- Add some ADI monitors, one BenQ, and and DPMS codes for two Apples
+
+* Fri Sep  2 2005 Bill Nottingham <notting@redhat.com> - 0.166-1
+- add videoaliases file
+- remove CardMonitorCombos, as nothing uses it
+
+* Thu Aug 25 2005 Dan Williams <dcbw@redhat.com> - 0.165-1
+- Add a bunch of Acer monitors
+
 * Tue Aug  9 2005 Jeremy Katz <katzj@redhat.com> - 0.164-1
 - migrate sk98lin -> skge
 

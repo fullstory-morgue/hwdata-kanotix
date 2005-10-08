@@ -44,7 +44,7 @@ install: build
 	grep -v -E '0x1244[[:space:]]0x0[ae]00|btaudio|0x1102[[:space:]]0x000[68]|tg3|r8180|sk98lin|snd-' $(CURDIR)/pcitable > $(CURDIR)/debian/hwdata-kanotix/usr/share/hwdata/pcitable
 	# we do that before compiling: cd debian/create-addon.sh
 	[ -f $(CURDIR)/debian/pcitable-kanotix.auto ] && \
-		grep -v -E '0x1244[[:space:]]0x0[ae]00|btaudio|0x1102[[:space:]]0x000[68]|tg3|r8180|sk98lin|snd-' $(CURDIR)/pcitable > $(CURDIR)/debian/hwdata-kanotix/usr/share/hwdata/pcitable  && \
+		grep -v -E '0x1244[[:space:]]0x0[ae]00|btaudio|0x1102[[:space:]]0x000[68]|aic7xxx|tg3|r8180|sk98lin|snd-' $(CURDIR)/pcitable > $(CURDIR)/debian/hwdata-kanotix/usr/share/hwdata/pcitable  && \
 		cat $(CURDIR)/debian/pcitable-kanotix.auto >> $(CURDIR)/debian/hwdata-kanotix/usr/share/hwdata/pcitable
 	[ -f $(CURDIR)/debian/pcitable-kanotix ] && cat $(CURDIR)/debian/pcitable-kanotix >> $(CURDIR)/debian/hwdata-kanotix/usr/share/hwdata/pcitable
 	# we do that before compiling: [ -x $(CURDIR)/debian/create-addon.sh ] && $(CURDIR)/debian/create-addon.sh

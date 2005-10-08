@@ -1,8 +1,8 @@
-hwdata-kanotix (0.164-6) UNRELEASED; urgency=low
+hwdata-kanotix (0.164-6) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add aic7xxx entries.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 Sep 2005 04:17:21 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  6 Oct 2005 01:34:56 +0200
 
 hwdata-kanotix (0.164-5) unstable; urgency=low
 

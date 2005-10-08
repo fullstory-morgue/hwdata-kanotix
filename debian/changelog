@@ -1,3 +1,9 @@
+hwdata-kanotix (0.164-7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  8 Oct 2005 17:16:54 +0200
+
 hwdata-kanotix (0.164-6) unstable; urgency=low
 
   * add aic7xxx entries.

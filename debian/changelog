@@ -1,3 +1,9 @@
+hwdata-kanotix (0.169-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  8 Oct 2005 17:23:57 +0200
+
 hwdata-kanotix (0.169-1) unstable; urgency=low
 
   * overhaul packaging.

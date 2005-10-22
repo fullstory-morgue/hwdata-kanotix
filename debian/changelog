@@ -1,3 +1,9 @@
+hwdata-kanotix (0.169-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 22 Oct 2005 23:20:04 +0200
+
 hwdata-kanotix (0.169-2) unstable; urgency=low
 
   * add NVIDIA GeForce 6600 GT, 0x10de 0x00f1.

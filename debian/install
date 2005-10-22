@@ -2,5 +2,4 @@ MonitorsDB	usr/share/hwdata/
 pci.ids		usr/share/hwdata/
 upgradelist	usr/share/hwdata/
 usb.ids		usr/share/hwdata/
-videoaliases	usr/share/hwdata/
 videodrivers	usr/share/hwdata/

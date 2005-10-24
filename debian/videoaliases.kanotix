@@ -1,1 +1,8 @@
 alias pcivideo:v000010DEd000000F1sv*sd*bc*sc*i* nv
+alias pcivideo:v000010DEd00000170sv*sd*bc*sc*i* nv
+alias pcivideo:v00008086d00003582sv*sd*bc*sc*i* i810
+alias pcivideo:v00008086d00002572sv*sd*bc*sc*i* i810
+alias pcivideo:v00008086d00002582sv*sd*bc*sc*i* i810
+alias pcivideo:v00008086d00002592sv*sd*bc*sc*i* i810
+alias pcivideo:v00008086d0000258Asv*sd*bc*sc*i* i810
+alias pcivideo:v00008086d00002772sv*sd*bc*sc*i* i810

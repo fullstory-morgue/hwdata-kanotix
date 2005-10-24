@@ -1,8 +1,8 @@
-hwdata-kanotix (0.169-3) UNRELEASED; urgency=low
+hwdata-kanotix (0.169-3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add further nvidia/ i915 PCI IDs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 22 Oct 2005 23:20:04 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 24 Oct 2005 02:32:41 +0200
 
 hwdata-kanotix (0.169-2) unstable; urgency=low
 

@@ -18,7 +18,7 @@ CVSROOT = $(shell cat CVS/Root 2>/dev/null || :)
 
 CVSTAG = $(NAME)-r$(subst .,-,$(VERSION))
 
-FILES = MonitorsDB pci.ids upgradelist usb.ids videoaliases videodrivers
+FILES = MonitorsDB pci.ids upgradelist usb.ids videodrivers
 
 all: 
 
@@ -27,6 +27,8 @@ install:
 	for foo in $(FILES) ; do \
 		install -m 644 $$foo $(datadir)/$(NAME) ;\
 	done
+	mkdir -p -m 755 $(datadir)/$(NAME)/videoaliases
+	install -m 644 videoaliases $(datadir)/$(NAME)/videoaliases/stock
 	mkdir -p -m 755 $(sysconfdir)/modprobe.d
 	install -m 644 blacklist $(sysconfdir)/modprobe.d
 

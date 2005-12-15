@@ -1,8 +1,18 @@
-hwdata-kanotix (0.169-4) UNRELEASED; urgency=low
+hwdata-kanotix (0.173-1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream release:
+    - add some IDs to the generic display entries for matching laptops
+    - r128 -> ati.  should fix the unresolved symbol and kem says its more
+      generally the "right" thing to do
+    - ditto for radeon
+    - handle mptsas for migration as well
+    - move videoaliases file to a subdir
+    - add Iiyama monitor (#168143)
+    - add IBM monitor (#168080)
+  * remove virtual knoppix packages.
+  * bump compat level to 5.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 24 Oct 2005 02:37:13 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 15 Dec 2005 12:11:26 +0100
 
 hwdata-kanotix (0.169-3) unstable; urgency=low
 

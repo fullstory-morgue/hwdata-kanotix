@@ -21,7 +21,7 @@ sym53c8xx_2	SCSI	sym53c8xx
 megaraid2	SCSI	megaraid_mbox
 megaraid	SCSI	megaraid_mbox
 dpt_i2o		SCSI	i2o_block
-mptscsih	SCSI	mptspi/mptfc
+mptscsih	SCSI	mptspi/mptfc/mptsas
 
 via82cxxx	AUDIO	snd-via82xx
 via82cxxx_audio	AUDIO	snd-via82xx

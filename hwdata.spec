@@ -1,6 +1,6 @@
 Name: hwdata
 Summary: Hardware identification and configuration data
-Version: 0.169
+Version: 0.173
 Release: 1
 License: GPL/MIT
 Group: System Environment/Base
@@ -33,6 +33,26 @@ rm -rf $RPM_BUILD_ROOT
 %config /usr/share/hwdata/*
 
 %changelog
+* Tue Dec 13 2005 Bill Nottingham <notting@redhat.com> - 0.173-1
+- add some IDs to the generic display entries for matching laptops
+
+* Fri Nov 18 2005 Bill Nottingham <notting@redhat.com> - 0.172-1
+- ditto for radeon
+
+* Fri Nov 18 2005 Jeremy Katz <katzj@redhat.com> - 0.171-1
+- r128 -> ati.  should fix the unresolved symbol and kem says its more 
+  generally the "right" thing to do
+
+* Wed Nov 16 2005 Bill Nottingham <notting@redhat.com> - 0.170-1
+- handle mptsas for migration as well
+- move videoaliases file to a subdir
+
+* Fri Sep 16 2005 Bill Nottingham <notting@redhat.com>
+- add Iiyama monitor (#168143)
+
+* Tue Sep 13 2005 Bill Nottingham <notting@redhat.com>
+- add IBM monitor (#168080)
+
 * Thu Sep  8 2005 Bill Nottingham <notting@redhat.com> - 0.169-1
 - remove Cards, pcitable. Add videodrivers
 

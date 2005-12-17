@@ -1,8 +1,10 @@
-hwdata-kanotix (0.173-2) UNRELEASED; urgency=low
+hwdata-kanotix (0.173-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * remove cdbs auto-update feature.
+  * clean up debian/control.
+  * actually remove virtual knoppix packages.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 15 Dec 2005 12:20:41 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 01:56:31 +0100
 
 hwdata-kanotix (0.173-1) unstable; urgency=low
 

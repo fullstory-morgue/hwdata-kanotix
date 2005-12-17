@@ -1,3 +1,9 @@
+hwdata-kanotix (0.173-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 02:01:04 +0100
+
 hwdata-kanotix (0.173-2) unstable; urgency=low
 
   * remove cdbs auto-update feature.

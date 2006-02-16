@@ -1,8 +1,8 @@
-hwdata-kanotix (0.173-3) UNRELEASED; urgency=low
+hwdata-kanotix (0.174-1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream release
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 02:01:04 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 16 Feb 2006 11:34:24 +0100
 
 hwdata-kanotix (0.173-2) unstable; urgency=low
 

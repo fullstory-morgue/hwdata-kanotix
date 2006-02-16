@@ -1,6 +1,6 @@
 Name: hwdata
 Summary: Hardware identification and configuration data
-Version: 0.173
+Version: 0.174
 Release: 1
 License: GPL/MIT
 Group: System Environment/Base
@@ -33,6 +33,9 @@ rm -rf $RPM_BUILD_ROOT
 %config /usr/share/hwdata/*
 
 %changelog
+* Wed Feb 01 2006 Phil Knirsch <pknirsch@redhat.com> - 0.174-1
+- Some cleanup and adds to the MonitorDB which closes several db related bugs.
+
 * Tue Dec 13 2005 Bill Nottingham <notting@redhat.com> - 0.173-1
 - add some IDs to the generic display entries for matching laptops
 

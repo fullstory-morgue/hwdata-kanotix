@@ -28,7 +28,6 @@ install:
 		install -m 644 $$foo $(datadir)/$(NAME) ;\
 	done
 	mkdir -p -m 755 $(datadir)/$(NAME)/videoaliases
-	install -m 644 videoaliases $(datadir)/$(NAME)/videoaliases/stock
 	mkdir -p -m 755 $(sysconfdir)/modprobe.d
 	install -m 644 blacklist $(sysconfdir)/modprobe.d
 

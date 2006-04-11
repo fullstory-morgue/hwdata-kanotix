@@ -965,9 +965,15 @@ Dell; Dell 1704FPT (Analog); DEL4004; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 1704FPT (Digital); DEL4005; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 1704FPV (Analog); DEL3015; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 1704FPV (Digital); DEL3016; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1706FPV (Analog); DEL3017; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1706FPV (Digital); DEL3018; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1707FP (Analog); DEL4012; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1707FP (Digital); DEL4013; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 1726T-HS/D1025HT; del5319; 31.0-85.0; 50.0-100.0; 1
 Dell; Dell 1800FP (Analog); DELE000; 30.0-80.0; 56.0-85.0; 1
 Dell; Dell 1800FP (Digital); DELE001; 30.0-70.0; 56.0-85.0; 1
+Dell; Dell 1800FP (Analog); DELE002; 30.0-80.0; 56.0-75.0; 1
+Dell; Dell 1800FP (Digital); DELE003; 30.0-70.0; 56.0-75.0; 1
 Dell; Dell 1801FP (Analog); DELE004; 30.0-80.0; 56.0-75.0; 1
 Dell; Dell 1801FP (Digital); DELE005; 30.0-80.0; 56.0-75.0; 1
 Dell; Dell 1900FP (Analog); DEL300B; 30.0-80.0; 56.0-76.0; 1
@@ -976,6 +982,10 @@ Dell; Dell 1901FP (Analog); DEL4000; 30.0-80.0; 56.0-76.0; 1
 Dell; Dell 1901FP (Digital); DEL4001; 30.0-80.0; 56.0-76.0; 1
 Dell; Dell 1905FP (Analog); DEL400C; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 1905FP (Digital); DEL400D; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1906FP (Analog); DEL400E; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1906FP (Digital); DEL400F; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1907FP (Analog); DEL4014; 30.0-81.0; 56.0-76.0; 1
+Dell; Dell 1907FP (Digital); DEL4015; 30.0-81.0; 56.0-76.0; 1
 Dell; Dell 2000FP (Analog); DELA002; 31.5-80.0; 56.0-76.0; 1
 Dell; Dell 2000FP (Digital); DELA003; 31.5-80.0; 56.0-76.0; 1
 Dell; Dell 2001FP (Analog); DELA007; 31.0-80.0; 56.0-76.0; 1
@@ -984,6 +994,7 @@ Dell; Dell 2005FPW (Analog); DELE008; 30.0-83.0; 56.0-75.0; 1
 Dell; Dell 2005FPW (Digital); DELE009; 30.0-83.0; 56.0-75.0; 1
 Dell; Dell 2405FPW (Analog); DELA00F; 30.0-83.0; 56.0-76.0
 Dell; Dell 2405FPW (Digital); DELA010; 30.0-83.0; 56.0-76.0
+Dell; Dell 3007WFP; DEL4016; 30.0-100.0; 56.0-76.0; 1
 Dell; Dell 800M; del5697; 30.0-70.0; 50.0-130.0; 1
 Dell; Dell 828FI; del3319; 30.0-70.0; 50.0-120.0; 1
 Dell; Dell D1025HE; del6124; 31.5-92.0; 50.0-150.0; 1
@@ -1004,11 +1015,14 @@ Dell; Dell E151FPb; DELA005; 30.0-61.0; 56.0-76.0; 1
 Dell; Dell E151FPp; DEL7006; 30.0-61.0; 56.0-76.0; 1
 Dell; Dell E152FP; DELA009; 30.0-63.0; 56.0-76.0; 1
 Dell; Dell E153FP; DELA00C; 30.0-63.0; 56.0-76.0; 1
+Dell; Dell E156FP; DELA013; 30.0-63.0; 56.0-76.0; 1
 Dell; Dell E171FP; DEL300F; 30.0-80.0; 56.0-76.0; 1
 Dell; Dell E171FPb; DELA006; 31.0-80.0; 56.0-76.0
 Dell; Dell E172FP; DELA00A; 31.0-80.0; 56.0-76.0; 1
 Dell; Dell E173FP; DELA00B; 31.0-80.0; 56.0-76.0; 1
+Dell; Dell E176FP; DELA014; 31.0-80.0; 56.0-75.0; 1
 Dell; Dell E193FP; DEL700E; 31.0-83.0; 56.0-76.0; 1
+Dell; Dell E196FP; DELA015; 31.0-83.0; 56.0-76.0; 1
 Dell; Dell E550; dela2f1; 30.0-54.0; 50.0-120.0; 1
 Dell; Dell E550mm; dela355; 30.0-54.0; 50.0-120.0; 1
 Dell; Dell E551a; dela000; 30.0-54.0; 50.0-120.0; 1
@@ -1036,6 +1050,7 @@ Dell; Dell M781p; del73bd; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M781s; del32b0; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M782; DEL3008; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M782p; DEL7004; 30.0-85.0; 50.0-160.0; 1
+Dell; Dell M783c; DELD008; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M783p; DEL700D; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M783s; DEL3013; 30.0-85.0; 50.0-160.0; 1
 Dell; Dell M791; del7001; 30.0-96.0; 50.0-160.0; 1
@@ -1657,6 +1672,7 @@ Hewlett-Packard;HP F1503 Flat Panel Monitor;hwp2590;30.0-63.0;56.0-76.0;1
 Hewlett-Packard;HP F1523 Flat Panel Monitor;hwp2607;30.0-61.0;56.0-76.0;1
 Hewlett-Packard;HP F1703 Flat Panel Monitor;hwp2594;30.0-83.0;56.0-76.0;1
 Hewlett-Packard;HP F1723 Flat Panel Monitor;hwp2609;30.0-81.0;56.0-76.0;1
+Hewlett-Packard;HP F2105 Flat Panel Monitor;hwp2655;30.0-94.0;48.0-85.0;1
 Hewlett-Packard;HP L1502 Flat Panel Monitor;hwp2600;30.0-61.0;56.0-76.0;1
 Hewlett-Packard;HP L1530 Flat Panel Monitor;hwp260c;30.0-63.0;56.0-76.0;1
 Hewlett-Packard;HP L1702 Flat Panel Monitor;hwp2601;30.0-81.0;56.0-76.0;1
@@ -4175,6 +4191,7 @@ ViewSonic; ViewSonic VP201b; VSC6911; 30-95; 50-85
 ViewSonic; ViewSonic VP201m; VSC5404; 30-82; 50-85
 ViewSonic; ViewSonic VP201mb; VSCEB04; 30-82; 50-85
 ViewSonic; ViewSonic VP201s; VSC0C18; 30-95; 50-85
+ViewSonic; ViewSonic VP2030; VSC131C; 30-92; 50-75
 ViewSonic; ViewSonic VP211b; VSC6A11; 30-95; 50-85
 ViewSonic; ViewSonic VP230mb; VSC7203; 30-82; 50-75
 ViewSonic; ViewSonic VPA138; vsc4141; 30-62; 50-75; 1

@@ -1,6 +1,6 @@
 Name: hwdata
 Summary: Hardware identification and configuration data
-Version: 0.174
+Version: 0.177
 Release: 1
 License: GPL/MIT
 Group: System Environment/Base
@@ -33,6 +33,16 @@ rm -rf $RPM_BUILD_ROOT
 %config /usr/share/hwdata/*
 
 %changelog
+* Fri Feb 24 2006 Bill Nottingham <notting@redhat.com> - 0.177-1
+- remove stock videoaliases in favor of driver-specific ones in
+  the X driver packages
+
+* Wed Feb 22 2006 Phil Knirsch <pknirsch@redhat.com> - 0.176-1
+- More entries from Dell to MonitorsDB (#181008)
+
+* Fri Feb 10 2006 Phil Knirsch <pknirsch@redhat.com> - 0.175-1
+- Added a few more entries to MonitorsDB
+
 * Wed Feb 01 2006 Phil Knirsch <pknirsch@redhat.com> - 0.174-1
 - Some cleanup and adds to the MonitorDB which closes several db related bugs.
 

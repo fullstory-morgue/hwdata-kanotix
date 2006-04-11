@@ -1,6 +1,10 @@
-hwdata-kanotix (0.174-2) UNRELEASED; urgency=low
+hwdata-kanotix (0.177-1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream release:
+    - remove stock videoaliases in favor of driver-specific ones in
+      the X driver packages
+    - More entries from Dell to MonitorsDB (#181008)
+    - Added a few more entries to MonitorsDB
   * bump compat level to 5.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 12 Mar 2006 00:15:51 +0100
